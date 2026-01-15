@@ -172,7 +172,6 @@ def send_email(recipient, first_name, subject, html_body):
         <strong>Mark Randell</strong><br>
         Marketing Executive | B2B Growth Expo<br>
         <a href="mailto:mark@londonbusinessshow.com" style="color:#000;text-decoration:none;">mark@londonbusinessshow.com</a><br>
-        (+44) 2034517166
     </div>"""
 
     unsubscribe_section = f"""

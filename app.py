@@ -24,14 +24,14 @@ threading.Thread(target=heartbeat, daemon=True).start()
 # === CONFIGURATION ===
 SERVICE_ACCOUNT_FILE = "/etc/secrets/credentials.json"
 SHEET_ID = "1Mm-v9NE1rycySiQaKG3Lr2heRcEtlc1XQbuCrOOqT8I"
-LEADS_TAB = "Email-campaigns-2"
-TEMPLATES_TAB = "Templates-2"
+LEADS_TAB = "Corporate-Wellbeing-Expo"
+TEMPLATES_TAB = "Templates-CWE"
 
-SMTP_SERVER = "mail.londonbusinessshow.com"
+SMTP_SERVER = "mail.corporatewellbeingexpo.uk"
 SMTP_PORT = 587
-IMAP_SERVER = "mail.londonbusinessshow.com"
-SENDER_EMAIL = "mark@londonbusinessshow.com"
-SENDER_PASSWORD = "S1$SuNr8[4+r-])d"
+IMAP_SERVER = "mail.corporatewellbeingexpo.uk"
+SENDER_EMAIL = "mike@corporatewellbeingexpo.uk"
+SENDER_PASSWORD = "EShMG#~u]S-Dz(5Q"
 
 UNSUBSCRIBE_API = "https://unsubscribe-uofn.onrender.com/get_unsubscribes"
 TRACKING_BASE = "https://tracking-enfw.onrender.com"
@@ -169,9 +169,9 @@ def send_email(recipient, first_name, subject, html_body):
     <br><br>
     <div style="color:#000;font-weight:bold;">
         Best regards,<br>
-        <strong>Mark Randell</strong><br>
+        <strong>Mike Randell</strong><br>
         Marketing Executive | B2B Growth Expo<br>
-        <a href="mailto:mark@londonbusinessshow.com" style="color:#000;text-decoration:none;">mark@londonbusinessshow.com</a><br>
+        <a href="mailto:mike@corporatewellbeingexpo.uk" style="color:#000;text-decoration:none;">mike@corporatewellbeingexpo.uk</a><br>
     </div>"""
 
     unsubscribe_section = f"""

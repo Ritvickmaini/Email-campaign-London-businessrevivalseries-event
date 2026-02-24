@@ -133,7 +133,7 @@ def send_email(recipient, first_name, subject, html_body):
 
     tracking_link = f"{TRACKING_BASE}/track/click?email={encoded_email}&url={encoded_event_url}&subject={encoded_subject}"
     tracking_pixel = f'<img src="{TRACKING_BASE}/track/open?email={encoded_email}&subject={encoded_subject}" width="1" height="1" style="display:block;margin:0 auto;" alt="." />'
-    unsubscribe_link = f"{UNSUBSCRIBE_BASE}/unsubscribe?email={encoded_email}"
+    unsubscribe_link = f"{UNSUBSCRIBE_BASE}/unsubscribe"
 
     first_name = (first_name or "").strip() or "there"
     html_body = html_body.replace("{%name%}", first_name)
